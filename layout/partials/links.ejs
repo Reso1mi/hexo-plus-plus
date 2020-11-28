@@ -1,0 +1,14 @@
+<section class="post page archives">
+  <h3 class="archive-year-wrap"><%= __('links')%></h3>
+  <div class="archives">
+    <% Object.keys(theme.links).forEach(function(key) { %>
+      <div class="archive">
+        <a class="post-go" target="_blank" style="color:#202020" href="<%=theme.links[key]%>">
+          <%= __(key)%>&nbsp;&nbsp;<span class="date" style="text-transform:none;font-size:14px;"><%=theme.links[key]%></span>
+        </a>
+      </div>
+    <% }); %>
+     <p style="color:#999;font-size:14px;margin-top: 30px;">恕我直言，在座的各位只有我是辣鸡！！！</p>
+  </div>
+</section>
+<%- partial('partials/comment') %>

@@ -1,0 +1,107 @@
+# 修改文件名为_config.yml配置才生效
+# html lang
+language: zh-Hans
+
+# main menu navigation
+menu:
+  home: /
+  post:
+      categories: /categories
+      archives: /archives
+      tags: /tags
+  算法: 
+      数组: http://imlgw.top/2019/05/04/leetcode-shu-zu/
+      链表: http://imlgw.top/2019/02/27/leetcode-lian-biao/
+      栈&队列: http://imlgw.top/2019/10/01/leetcode-zhan-dui-lie/
+      查找: http://imlgw.top/2019/09/15/leetcode-cha-zhao/
+      滑动窗口: http://imlgw.top/2019/07/20/leetcode-hua-dong-chuang-kou/
+      动态规划: http://imlgw.top/2019/09/01/leetcode-dong-tai-gui-hua/
+      二分查找: http://imlgw.top/2019/12/06/leetcode-er-fen-cha-zhao/
+      二叉树: http://imlgw.top/2019/11/06/leetcode-er-cha-shu/
+      背包问题: http://imlgw.top/2019/11/29/leetcode-bei-bao-wen-ti/
+      回溯: http://imlgw.top/2019/10/10/leetcode-hui-su/
+      贪心: http://imlgw.top/2020/01/21/leetcode-tan-xin/
+      位运算: http://imlgw.top/2020/07/03/leetcode-wei-yun-suan/
+      单调栈: http://imlgw.top/2020/08/28/leetcode-dan-diao-zhan/
+  Github: /project
+  #activity: /activity
+  search: /search
+  about: /about
+  # rss: /atom.xml
+
+# Miscelaneous
+favicon: /img/cat.ico
+logo: 
+
+share:
+    show: false
+    img:
+    img_alt:
+    tip_text: test
+
+# stylesheets loaded in the <head>
+stylesheets:
+# - /css/normalize.css
+- //cdn.bootcss.com/pure/1.0.0/pure-min.css
+- /css/xoxo.css
+
+# baidu url js push
+baidu_url_js_push: false
+
+
+# comment extend, support gialk
+comment_extend:
+    gitalk:
+        enable: false
+        clientID: # 不安全，不建议使用
+        clientSecret: # 
+
+valine:
+  enable: false # if you want use valine,please set this value is true
+  appId: xx
+  appKey: xx
+  notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+  verify: false # valine verify code (true/false)
+  pageSize: 10 # comment list page size
+  avatar: monsterid # gravatar style https://valine.js.org/#/avatar
+  lang: zh-cn # i18n: zh-cn/en/tw
+  placeholder: 留下邮箱才能收到回复喔 ~  # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail,link #valine comment header inf
+
+# scripts loaded in the end of the body
+scripts:
+#- //cdn.bootcss.com/zepto/1.2.0/zepto.min.js
+#- /js/xoxo.js
+
+# switch
+show_excerpt: true
+# 自动获取摘要的长度
+auto_excerpt_len: 150
+show_date: true
+
+#footer
+index_page: /
+main_site: /
+github: https://github.com/imlgw
+links_url: /links
+ICP:
+  url: http://beian.miit.gov.cn/publish/query/indexFirst.action
+  text: 鄂ICP备xxxxx号
+
+# 友情链接
+links:
+  学长: http://www.zhenganwen.top/
+# project
+projects:
+  LeetCode:
+    url: https://github.com/imlgw/LeetCode
+    descript: 菜鸡刷题记录
+  Gacache:
+    url: https://github.com/imlgw/gacache
+    descript: 模仿groupcache实现的分布式缓存组件，对原项目热备功能进行了简单的增强
+  Scheduler:
+    url: https://github.com/imlgw/scheduler
+    descript: Golang Distributed task scheduling
+# activitys
+
+# papers
