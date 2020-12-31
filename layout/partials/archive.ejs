@@ -1,5 +1,6 @@
 <% var last; %>
 <% page.posts.each(function(post, i){ %>
+  <% if (!post.hidden) { %>
   <% var year = post.date.year(); %>
   <% if (last != year){ %>
     <% if (last != null){ %>
@@ -15,6 +16,7 @@
       <div class="archives">
   <% } %>
   <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+  <% } %>
 <% }) %>
 <% if (page.posts.length){ %>
   </div></section>
