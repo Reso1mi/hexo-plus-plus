@@ -108,7 +108,8 @@
                       if (end > content.length) {
                        end = content.length;
                       }
-                      var match_content = content.substr(start, end);
+                    //   console.log(data_title, start, end)
+                      var match_content = content.substring(start, end);
                       // highlight all keywords
                       keywords.forEach(function(keyword) {
                         var regS = new RegExp(keyword, "gi");

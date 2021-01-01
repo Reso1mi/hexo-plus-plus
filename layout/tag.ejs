@@ -1,7 +1,8 @@
 
 <div class="page tag-page" id="tag">
-  <h3 title="<%=page.tag%>下的文章"><%=page.tag%></h3>
+  <h3 title="<%=page.tag%>"><%=page.tag%>下的文章</h3>
   <% page.posts.each(function(article) { %>
+    <% if (!article.hidden) { %>
     <div class="tag-item">
       <% if (article.link) { %>
         <a href="<%=url_for(article.link)%>" target="_blank">
@@ -16,5 +17,6 @@
         <%=date(article.date)%>
       </time>
     </div>
+    <% } %>
   <% }); %>
 </div>
