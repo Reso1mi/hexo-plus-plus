@@ -1,0 +1,101 @@
+# 修改文件名为_config.yml配置才生效
+# html lang
+language: zh-Hans
+
+# main menu navigation
+menu:
+  home: /
+  archives: /archives
+  Github: /project
+  #activity: /activity
+  search: /search
+  about: /about
+  Selfhosted: /links
+
+
+# Miscelaneous
+favicon: /img/cat.ico
+logo: 
+
+share:
+    show: false
+    img:
+    img_alt:
+    tip_text: test
+
+# stylesheets loaded in the <head>
+stylesheets:
+# - /css/normalize.css
+- //cdn.bootcss.com/pure/1.0.0/pure-min.css
+- /css/xoxo.css
+
+# baidu url js push
+baidu_url_js_push: false
+
+
+# comment extend, support gialk
+comment_extend:
+    gitalk:
+        enable: false
+        clientID: # 不安全，不建议使用
+        clientSecret: # 
+    disqus:
+        shortname: imlgw
+
+# valine:
+#   enable: false # if you want use valine,please set this value is true
+#   appId: xx
+#   appKey: xx
+#   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+#   verify: false # valine verify code (true/false)
+#   pageSize: 10 # comment list page size
+#   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
+#   lang: zh-cn # i18n: zh-cn/en/tw
+#   placeholder: 留下邮箱才能收到回复喔 ~  # valine comment input placeholder(like: Please leave your footprints )
+#   guest_info: nick,mail,link #valine comment header inf
+
+# scripts loaded in the end of the body
+scripts:
+#- //cdn.bootcss.com/zepto/1.2.0/zepto.min.js
+#- /js/xoxo.js
+
+# switch
+show_excerpt: true
+# 自动获取摘要的长度
+auto_excerpt_len: 150
+show_date: true
+
+#footer
+index_page: /
+main_site: /
+github: https://github.com/imlgw
+links_url: /links
+ICP:
+  url: http://beian.miit.gov.cn/publish/query/indexFirst.action
+  text: 鄂ICP备18011208号
+
+# 友情链接
+links:
+  PasteMe: https://paste.imlgw.top
+  FireFox Send: https://send.imlgw.top
+  NoVNC: https://vnc.imlgw.top
+  Code Server: https://code.imlgw.top
+
+# project
+projects:
+  competition-algorithm:
+    url: https://github.com/imlgw/competition-algorithm
+    descript: Some competitive algorithm learning.
+  hexo-plus-plus:
+    url: https://github.com/imlgw/hexo-plus-plus
+    descript: 本博客使用的主题，原主题为 hexo-theme-microb，在其基础之上进行一系列的瞎改，简洁，速度至上。
+  jinx:
+    url: https://github.com/imlgw/jinx
+    descript: IO多路复用 + Reactor模式实现的网络库
+  gacache:
+    url: https://github.com/imlgw/gacache
+    descript: 模仿groupcache实现的分布式缓存组件，对原项目热备功能进行了简单的增强。
+
+# activitys
+
+# papers
