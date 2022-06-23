@@ -5,7 +5,10 @@ language: zh-Hans
 # main menu navigation
 menu:
   home: /
-  archives: /archives
+  post:
+      categories: /categories
+      archives: /archives
+      tags: /tags
   Github: /project
   #activity: /activity
   search: /search
@@ -14,7 +17,7 @@ menu:
 
 
 # Miscelaneous
-favicon: /img/cat.ico
+favicon: /img/fa.svg
 logo: 
 
 share:
